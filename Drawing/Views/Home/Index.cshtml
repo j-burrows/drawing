@@ -1,0 +1,32 @@
+﻿@model Drawing.Models.HomeIndexViewModel
+
+@section LogoffButton{
+    @Html.Partial("LogoffButton")
+}
+
+@section NavStyle{
+    <style>
+    @{int i = 0;}
+    @foreach(var row in Model.navSection){
+        i++;
+        <text> #navRow_@i .navLink{ width: @((double) (99.8-row.Count()*0.4)/row.Count())%; } </text>
+    }
+    </style>
+}
+
+@section NavSection{
+    @Html.Partial("NavSection", Model.navSection)
+}
+
+<a id="ImageCreateButton" draggable="true">Create Drawing</a>
+
+@foreach(var image in Model.Images){
+    @Html.Partial("Image/Image_View", image);
+}
+
+@section scripts{
+    <script src="~/Scripts/CanvasDraw.js"></script>
+    <script>
+        sayHello('hello, world');
+    </script>
+}

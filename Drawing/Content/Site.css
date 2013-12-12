@@ -1,0 +1,305 @@
+﻿@font-face {
+	font-family: 'BOGSTAND';
+	src: url('http://jonathanburrows.org/Content/fonts/bogstand-webfont.eot');
+	src: url('http://jonathanburrows.org/Content/fonts/bogstand-webfont.eot?#iefix') format('embedded-opentype'),
+			url('http://jonathanburrows.org/Content/fonts/bogstand-webfont.woff') format('woff'),
+			url('http://jonathanburrows.org/Content/fonts/bogstand-webfont.ttf') format('truetype'),
+			url('http://jonathanburrows.org/Content/fonts/bogstand-webfont.svg#bog_standardregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'walkwayregular';
+    src: url('fonts/walkway-webfont.eot');
+    src: url('fonts/walkway-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/walkway-webfont.woff') format('woff'),
+         url('fonts/walkway-webfont.ttf') format('truetype'),
+         url('fonts/walkway-webfont.svg#walkwayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neou';
+    src: url('fonts/Neou-Thin.eot');
+    src: url('fonts/Neou-Thin.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Neou-Thin.woff') format('woff'),
+         url('fonts/Neou-Thin.ttf') format('truetype'),
+         url('fonts/Neou-Thin.svg#walkwayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	background-color: hsl(229, 50%, 88%);
+	font-family: "walkwayregular", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+    letter-spacing: 0.07em;
+    font-size: 1vw;
+}
+
+h2 {
+    font-family: "Neou", Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+p{
+	padding: 0;
+	margin: 0;
+}
+.flexContainer{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: stretch;
+	-moz-box-align: stretch;
+	-ms-flex-align: stretch;
+	-webkit-align-items: stretch;
+	align-items: stretch;
+	justify-content: space-between;
+}
+	
+.flexComponent{
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	-moz-flex: 1;
+	-o-flex: 1;
+	flex: 1;
+}
+	
+.animatable{
+	-webkit-transition: 0.15s linear;
+		-moz-transition: 0.15s linear;
+		-ms-transition: 0.15s linear;
+			-o-transition: 0.15s linear;
+			transition:	0.15s linear;
+}
+	
+.linkAnimate, .LogoutButton > input, #ImageCreateButton{
+	-webkit-transition: 0.15s linear;
+		-moz-transition: 0.15s linear;
+		-ms-transition: 0.15s linear;
+			-o-transition: 0.15s linear;
+			transition:	0.15s linear;
+}
+	
+	.linkAnimate:active, .LogoutButton > input:active, #ImageCreateButton:active{
+		-webkit-transition: none;
+			-moz-transition: none;
+			-ms-transition: none;
+				-o-transition: none;
+				transition:	none;
+	}
+	
+#mainSection{
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	width: 90rem;
+	left: 50%;
+	position: relative;
+	margin-left: -45rem;
+	font-size: 1.25rem;
+	position:relative;
+	float: left;
+}
+#banner{
+	color: white;
+	background-color: hsl(0,0%,16%);
+	padding: 0.2rem 0.8rem 0.1rem 0.8rem;
+}
+
+#Logo {
+    height: 1.6rem;
+    float: left;
+    padding: 0 0.4rem 0 0;
+    margin: 0;
+}
+	
+#bannerHeader{
+    text-transform:uppercase;
+	padding: 0;
+	margin: 0;
+	font-size: 2rem;
+    line-height: 2rem;
+	float: left;
+}
+	
+.navRow{
+	margin-bottom: 0.3rem;
+	width: 100%;
+}
+	
+.navLink{
+	background-color: hsl(0,0%,26%);
+	line-height: 2rem;
+	text-align: center;
+	font-size: 1.7rem;
+	float: left;
+	cursor: pointer;
+	margin: 0 0.2rem 0 0.2rem;
+	word-break: break-all;
+}
+	
+@media screen and (min-width: 1000px){
+	.navLink{
+		line-height: 1.8rem;
+		font-size: 1.4rem;
+	}
+}
+	
+	.navLink:hover, .inFocus{
+		background-color: hsl(0,0%,40%);
+	}
+		
+	.navLink:active{
+		background-color: hsl(0,0%,60%);
+	}
+	
+#mainContent{
+	font-size: 1.25rem;
+	padding: 1rem;
+	text-align: justify;
+    padding-bottom: 0.8rem;
+}
+	
+.article{
+	float: left;
+}
+	
+.articleContent{
+	position:relative;
+	color: hsl(0,0%,30%);
+	font-size: 1.4rem;
+}
+	
+@media screen and (min-width: 1000px){
+	.articleContent{
+		font-size: 0.9rem;
+	}
+}
+.articleImage{
+	margin: 0 0.8rem 0rem 0;
+	width: 40%;
+	float: left;
+	position:relative;
+}
+	
+.articleHeader{
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+#footer{
+	clear: both;
+	color: white;
+	background-color: hsl(0,0%,24%);
+	padding: 1rem 1rem 0.1rem 1rem;
+	font-size: 1rem;
+	color: hsl(280,50%,50%);
+}
+#footerHeader{
+	font-size: 1rem;
+	padding: 0;
+	margin: 0;
+}
+	
+#relatedLinks{	}
+	
+.relatedLink{
+	float: left;
+	color: hsl(280,40%,40%);
+	text-align: center;
+	cursor: pointer;
+}
+	.relatedLink:hover{
+	    color: hsl(280,53%,53%);
+	}
+#copyrightStamp{
+	text-align: center;
+    color: white;
+}
+
+.ValidationError { 
+    color: red;
+}
+
+.invalid {
+    border-color: hsl(0,100%,50%);
+    background-color: hsl(0,100%,90%);
+}
+
+.LogoutButton > input {
+	background: hsl(0,0%,26%);
+    float: right;
+    margin: 0 0.2rem 0 0;
+    cursor: pointer;
+	color: hsl(280,45%,45%);
+    font-size: 1.2rem;
+    position: relative;
+    border: none;
+    padding: 0.2rem;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+    .LogoutButton > input:hover {
+		background-color: hsl(0,0%,40%);
+	    color: hsl(280,60%,60%);
+    }
+
+    .LogoutButton > input:active {
+		background-color: hsl(0,0%,60%);
+	    color: hsl(280,75%,75%);
+    }
+
+.Image_View {
+    position: relative;
+    float: left;
+    box-shadow: 0 0 6px rgba(0,0,0,0.6);
+    height: 30rem;
+    width: 43rem;
+    margin: 0 1rem 1rem 0;
+    cursor: pointer;
+}
+
+.Image_Title {
+    text-align: center;
+    text-shadow: 0px 0px 0.1rem white;
+}
+
+#ImageCreateButton {
+    width: 87rem;
+    height: 8rem;
+    background-color: hsl(280,100%,65%);
+    float: left;
+    margin-bottom: 1rem;
+    line-height: 8rem;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+#ImageCreateButton:hover {
+    background-color: hsl(280,100%,80%);
+}
+
+#ImageCreateButton:active {
+    background-color: hsl(280,100%,35%);
+}
